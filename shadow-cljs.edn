@@ -1,0 +1,8 @@
+{:source-paths ["src/main"]
+ :dependencies [[tracks "1.0.6"]]
+ :builds
+ {:functions
+  {:target      :node-library
+   :output-to   "dist/index.js"
+   :exports-var macrotest.core/cloud-functions
+   :release     {:compiler-options {:optimizations :simple}}}}}
